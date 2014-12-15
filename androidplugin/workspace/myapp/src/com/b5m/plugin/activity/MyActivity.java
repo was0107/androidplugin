@@ -19,7 +19,6 @@ public class MyActivity extends Activity {
                 ViewGroup.LayoutParams.FILL_PARENT));
         setContentView(text);
 
-        text.setText("plugin activity");
-
+        text.setText("myapp activity");
     }
 }
