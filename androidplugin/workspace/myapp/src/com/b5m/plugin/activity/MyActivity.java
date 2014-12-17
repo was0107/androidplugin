@@ -12,7 +12,9 @@ public class MyActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/* setContentView(R.layout.main); */
+//        setContentView(R.layout.main);
+
+
         TextView text = new TextView(this);
         text.setLayoutParams(new ViewGroup.LayoutParams(
                 ViewGroup.LayoutParams.FILL_PARENT,
@@ -22,3 +24,9 @@ public class MyActivity extends Activity {
         text.setText("myapp activity");
     }
 }
+
+
+
+
+
+

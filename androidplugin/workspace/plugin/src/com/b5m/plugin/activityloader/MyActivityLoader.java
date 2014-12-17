@@ -19,14 +19,12 @@ import java.util.Map;
 /**
  * Created by boguang on 14-12-8.
  */
-public class MyActivityLoader extends ListActivity
-{
+public class MyActivityLoader extends ListActivity {
     protected List<Map<String, String>> data = new ArrayList<Map<String, String>>();
 
-    private void addItem(String title, String path)
-    {
+    private void addItem(String title, String path) {
         HashMap<String, String> map = new HashMap<String, String>();
-        map.put("title",title);
+        map.put("title", title);
         map.put("path", path);
         data.add(map);
     }
@@ -36,13 +34,13 @@ public class MyActivityLoader extends ListActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addItem("[Launch SampleActivity]",null);
-        addItem("[Launch Default]",null);
+        addItem("[Launch SampleActivity]", null);
+        addItem("[Launch Default]", null);
 
         AssetManager assets = getAssets();
         try {
             for (String s : assets.list("plugintest")) {
-                addItem(s, "plugintest/"+s );
+                addItem(s, "plugintest/" + s);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -50,8 +48,8 @@ public class MyActivityLoader extends ListActivity
 
 
         SimpleAdapter adapter = new SimpleAdapter(this, data,
-                android.R.layout.simple_list_item_1, new String[] { "title" },
-                new int[] { android.R.id.text1 });
+                android.R.layout.simple_list_item_1, new String[]{"title"},
+                new int[]{android.R.id.text1});
         setListAdapter(adapter);
     }
 
@@ -77,7 +75,7 @@ public class MyActivityLoader extends ListActivity
             File dex = getDir("dex", MODE_PRIVATE);
             dex.mkdir();
 
-            File inFile = new File(dex,title);
+            File inFile = new File(dex, title);
 
             InputStream inputStream = getAssets().open(path);
             OutputStream outputStream = new FileOutputStream(inFile);
