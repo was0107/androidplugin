@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FragmentDeveloper/FragmentDeveloper.iml" filepath="$PROJECT_DIR$/FragmentDeveloper/FragmentDeveloper.iml" />
       <module fileurl="file://$PROJECT_DIR$/FragmentLoader/FragmentLoader.iml" filepath="$PROJECT_DIR$/FragmentLoader/FragmentLoader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Host/Host.iml" filepath="$PROJECT_DIR$/Host/Host.iml" />
       <module fileurl="file://$PROJECT_DIR$/workspace/myapp/myapp.iml" filepath="$PROJECT_DIR$/workspace/myapp/myapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/workspace/plugin/plugin.iml" filepath="$PROJECT_DIR$/workspace/plugin/plugin.iml" />
     </modules>

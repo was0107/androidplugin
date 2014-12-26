@@ -28,8 +28,7 @@ public class ListAPKFragment extends ListFragment {
         AssetManager assetManager = getActivity().getAssets();
 
         try {
-            for (String apk : assetManager.list("plugintest"))
-            {
+            for (String apk : assetManager.list("plugintest")) {
                 addItem(apk, "plugintest/" + apk);
             }
         } catch (IOException e) {
@@ -43,17 +42,12 @@ public class ListAPKFragment extends ListFragment {
         setListAdapter(adapter);
     }
 
-
-
     private void addItem(String title, String path){
-
         Map<String,String> map = new HashMap<String, String>();
         map.put("title",title);
         map.put("path",path);
         list.add(map);
     }
-
-
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
