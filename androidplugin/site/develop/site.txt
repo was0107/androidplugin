@@ -7,7 +7,7 @@
   }],
   "fragments": [
     {
-      "host": “develop”,
+      "host": "develop",
       "name": "com.b5m.fragment.DevelopFragment",
       "code": "com.b5m.fragment.20141226.1”
     }
