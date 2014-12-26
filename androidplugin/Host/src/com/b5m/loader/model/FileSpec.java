@@ -56,7 +56,7 @@ public class FileSpec implements Parcelable {
         this.down = jsonObject.optInt("down", 0);
         this.length = jsonObject.optInt("length", 0);
 
-        JSONArray jsonArray = jsonObject.getJSONArray("deps");
+        JSONArray jsonArray = jsonObject.optJSONArray("deps");
         if (null != jsonArray) {
             deps = new String[jsonArray.length()];
             for (int i = 0 ; i < deps.length; i++) {

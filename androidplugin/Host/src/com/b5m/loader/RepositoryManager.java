@@ -116,24 +116,24 @@ public class RepositoryManager {
         return  path;
     }
 
-    public synchronized void addFileds(FileSpec[] fileSpecs) {
+    public synchronized void addFiles(FileSpec[] fileSpecs) {
         for (FileSpec spec : fileSpecs) {
             map.put(spec.getId(),spec);
         }
 
         for (FileSpec spec : fileSpecs) {
-            appedDepsList(map,order,spec.getId());
+            appendDepsList(map, order, spec.getId());
         }
     }
 
-    public  boolean appedDepsList(LinkedList<FileSpec>linkedList,
+    public  boolean appendDepsList(List<FileSpec>linkedList,
                                         String filed) {
-        return appedDepsList(map,linkedList,filed);
+        return appendDepsList(map,linkedList,filed);
     }
 
     // return false if missing file or loop deps
-    public static boolean appedDepsList(HashMap<String ,FileSpec> map,
-                                        LinkedList<FileSpec>linkedList,
+    public static boolean appendDepsList(HashMap<String ,FileSpec> map,
+                                         List<FileSpec>linkedList,
                                         String filed){
         FileSpec spec = map.get(filed);
         if (null == spec)
@@ -142,7 +142,7 @@ public class RepositoryManager {
             return true;
         if (null != spec.getDeps()) {
             for (String dep : spec.getDeps()) {
-                if (!appedDepsList(map,linkedList,dep))
+                if (!appendDepsList(map, linkedList, dep))
                     return false;
             }
         }

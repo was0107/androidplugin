@@ -22,7 +22,7 @@ public class FragmentSpec implements Parcelable{
 
     public FragmentSpec(JSONObject jsonObject) throws JSONException{
         this.host = jsonObject.getString("host");
-        this.name = jsonObject.getString("name");
+        this.name = jsonObject.optString("name");
         this.code = jsonObject.getString("code");
     }
 

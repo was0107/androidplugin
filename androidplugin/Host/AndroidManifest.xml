@@ -4,13 +4,31 @@
           android:versionCode="1"
           android:versionName="1.0">
     <uses-sdk android:minSdkVersion="14"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".MyApplication">
-        <activity android:name="MyActivity"
+        <activity android:name="com.b5m.loader.HomeActivity"
                   android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name="com.b5m.loader.ForwardActivity" android:label="Forward">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="app"></data>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.b5m.loader.MainActivity" android:label="Main">
+
+        </activity>
+        <activity android:name="com.b5m.loader.LoaderActivity" android:label="Loader">
         </activity>
     </application>
 </manifest>
