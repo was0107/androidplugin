@@ -73,7 +73,7 @@ public class HomeActivity extends MyActivity {
                 String url = ((TextView) findViewById(R.id.last_url)).getText().toString();
                 startActivity(url);
             } else if (v.getId() == R.id.go_helloworld) {
-                siteUrl.setText("https://raw.github.com/mmin18/AndroidDynamicLoader/master/site/helloworld/site.txt");
+                siteUrl.setText("https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/site.txt");
                 findViewById(R.id.go).performClick();
             } else if (v.getId() == R.id.go_bitmapfun) {
                 siteUrl.setText("https://raw.github.com/mmin18/AndroidDynamicLoader/master/site/bitmapfun/site.txt");
