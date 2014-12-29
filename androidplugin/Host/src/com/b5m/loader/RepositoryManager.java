@@ -254,8 +254,12 @@ public class RepositoryManager {
     }
 
     private void disableConnectionReuseIfNecessary() {
-        if (Integer.getInteger(Build.VERSION.SDK) < 8) {
-            System.setProperty("http:keepAlive", "false");
+        try {
+            if (Integer.getInteger(Build.VERSION.SDK) < 8) {
+                System.setProperty("http:keepAlive", "false");
+            }
+        } catch (Exception e ) {
+
         }
     }
 
@@ -318,10 +322,10 @@ public class RepositoryManager {
                             m.update(buffer, 0 , l);
                         }
                         fis.close();
-                        String md5 = byteArrayToHexString(buffer);
+                        String md5 = byteArrayToHexString(m.digest());
                         succeed = fCurrent.getMd5().equals(md5);
                         if (!succeed)
-                            Log.e("Loader","failed to  match" + fCurrent.getId() + " MD5 "+ fCurrent.getMd5() + " md5  " + md5);
+                            Log.e("Loader","failed to  match " + fCurrent.getId() + " MD5 "+ fCurrent.getMd5() + " md5  " + md5);
 
                     } catch (Exception e) {
                         Log.w("Loader","failed to  verify file " + f.getAbsolutePath(), e);

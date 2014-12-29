@@ -200,7 +200,6 @@ public class LoaderActivity extends MyActivity {
             }
             if (missing) {
                 isDownloading = true;
-
                 repoManager.addListener(this);
                 repoManager.require(depsList);
             } else {

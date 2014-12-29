@@ -119,13 +119,14 @@ public class MainActivity extends MyActivity {
             error = 211;
             classLoader = null;
             TextView textView = new TextView(this);
-            textView.setText("无法载入页面：" + error);
+            textView.setText("无法载入页面：" + error + "\n" + e);
             textView.setLayoutParams(new FrameLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT,
                     Gravity.CENTER
             ));
             rootView.addView(textView);
+            return;
         }
 
         FragmentManager fm = getFragmentManager();
