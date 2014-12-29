@@ -1,16 +1,21 @@
 {
-  "id": "com.b5m.fragment.20141226.1",
+  "id": "sample.helloworld.20130703.1",
   "files": [{
-    "id": "com.b5m.fragment.20141226.1",
-    "md5": "779ab9c28a335357f9f2236f72e1e2c1",
-    "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/FragmentLoader.apk"
+    "id": "sample.helloworld.20130703.1",
+    "md5": "69d3d81fa8cc5f05f1daab16dae89f4c",
+    "url": "https://raw.github.com/mmin18/AndroidDynamicLoader/master/site/helloworld/sample.helloworld.20130703.1.apk"
   }],
   "fragments": [
     {
-      "host": “wanna”,
-      "name": "com.b5m.fragment.DevelopFragment",
-      "code": "com.b5m.fragment.20141226.1"
+      "host": "helloworld",
+      "name": "sample.helloworld.HelloFragment",
+      "code": "sample.helloworld.20130703.1"
+    },
+    {
+      "host": "pickname",
+      "name": "sample.helloworld.PickerFragment",
+      "code": "sample.helloworld.20130703.1"
     }
   ],
-  "version": "20141226.1”
+  "version": "20130703.1"
 }
