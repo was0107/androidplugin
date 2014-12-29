@@ -2,8 +2,8 @@
   "id": "com.b5m.fragment.20141226.1",
   "files": [{
     "id": "com.b5m.fragment.20141226.1",
-    "md5": "779ab9c28a335357f9f2236f72e1e2c1",
-    "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/FragmentLoader.apk"
+    "md5": "4d3aa63321403e78c6272df26a65b7bd",
+    "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/FragmentDevekioer.apk"
   }],
   "fragments": [
     {

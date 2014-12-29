@@ -3,6 +3,7 @@ package com.b5m.fragment;
 import android.app.Fragment;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ public class DevelopFragment  extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        Log.e("DevelopFragment","onCreateView");
         ViewGroup view = (ViewGroup)inflater.inflate(R.layout.developer_fragment,container,false);
         webView = (WebView)view.findViewById(R.id.webview);
         button = (Button)view.findViewById(R.id.btn);
