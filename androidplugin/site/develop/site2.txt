@@ -1,0 +1,16 @@
+{
+  "id": "com.b5m.hello.20141229.1",
+  "files": [{
+    "id": "com.b5m.hello.20141229.1",
+    "md5": "28d5bcb1ca4dd2cede6489bb9f68d7bf",
+    "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/HelloB5m.apk”
+  }],
+  "fragments": [
+    {
+      "host": “hellob5m”,
+      "name": "com.b5m.hello.HelloWorld",
+      "code": "com.b5m.hello.20141229.1”
+    }
+  ],
+  "version": "20141229.1"
+}

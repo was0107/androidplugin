@@ -115,6 +115,7 @@ public class MainActivity extends MyActivity {
             fragment = (Fragment)getClassLoader().loadClass(fragmentName).newInstance();
 
         } catch (Exception e ) {
+            e.printStackTrace();
             loaded = false;
             error = 211;
             classLoader = null;

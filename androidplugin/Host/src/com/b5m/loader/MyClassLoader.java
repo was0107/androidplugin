@@ -35,6 +35,7 @@ public class MyClassLoader extends DexClassLoader {
             clazz = getParent().loadClass(className);
         } catch (ClassNotFoundException e) {
             Log.e("Loader","ClassNotFoundException =  " + e);
+            e.printStackTrace();
         }
 
         if (null != clazz)
@@ -42,8 +43,12 @@ public class MyClassLoader extends DexClassLoader {
 
         if (null!= deps) {
             for(MyClassLoader cl : deps) {
-                clazz = cl.findClass(className);
-                break;
+                try {
+                    clazz = cl.findClass(className);
+                    break;
+                } catch (ClassNotFoundException e) {
+                    Log.e("Loader","deps ClassNotFoundException =  " + e);
+                }
             }
         }
 
