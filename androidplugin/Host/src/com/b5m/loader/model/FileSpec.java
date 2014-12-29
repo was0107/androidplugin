@@ -52,7 +52,7 @@ public class FileSpec implements Parcelable {
     public FileSpec(JSONObject jsonObject) throws JSONException {
         this.id = jsonObject.getString("id");
         this.url = jsonObject.getString("url");
-        this.md5 = jsonObject.getString("md5");
+        this.md5 = jsonObject.optString("md5");
         this.down = jsonObject.optInt("down", 0);
         this.length = jsonObject.optInt("length", 0);
 
@@ -127,13 +127,7 @@ public class FileSpec implements Parcelable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof FileSpec)) return false;
-
-        FileSpec fileSpec = (FileSpec) o;
-
-        if (!Arrays.equals(deps, fileSpec.deps)) return false;
-        if (id != null ? !id.equals(fileSpec.id) : fileSpec.id != null) return false;
-
-        return true;
+        return id.equals(((FileSpec) o).id);
     }
 
     @Override

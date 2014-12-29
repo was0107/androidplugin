@@ -180,7 +180,7 @@ public class RepositoryManager {
         order.removeAll(Arrays.asList(spec));
         for (int i = spec.length - 1; i >= 0 ; i--) {
             FileSpec file = spec[i];
-            order.add(file);
+            order.addFirst(file);
             Integer rc = require.get(file.getId());
             if (null == rc)
                 require.put(file.getId(),1);
@@ -218,11 +218,11 @@ public class RepositoryManager {
                     networkType = getNetWorkType();
                 switch (spec.getDown()) {
                     case FileSpec.DOWN_3G:
-                        if (networkType > 2)
+                        if (networkType >= 2)
                             return spec;
                         break;
                     case FileSpec.DOWN_WIFI:
-                        if (networkType > 3)
+                        if (networkType >= 3)
                             return spec;
                         break;
                 }

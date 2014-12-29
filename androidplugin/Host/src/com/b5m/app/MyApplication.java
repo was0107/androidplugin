@@ -67,9 +67,14 @@ public class MyApplication extends Application {
         do {
             if (intent.getComponent() != null)
                 break;
-            Uri uri = intent.getData();
 
-            if (null == uri || null == uri.getScheme() || !PRIMARY_SCHEME.equalsIgnoreCase(uri.getScheme()))
+            // only process my scheme uri
+            Uri uri = intent.getData();
+            if (uri == null)
+                break;
+            if (uri.getScheme() == null)
+                break;
+            if (!(PRIMARY_SCHEME.equalsIgnoreCase(uri.getScheme())))
                 break;
 
             SiteSpec site = null;
@@ -114,5 +119,11 @@ public class MyApplication extends Application {
         return  intent;
     }
 
+
+    @Override
+    public void startActivity(Intent intent) {
+        intent = urlMap(intent);
+        super.startActivity(intent);
+    }
 
 }

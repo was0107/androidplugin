@@ -36,7 +36,7 @@ public class SiteSpec implements Parcelable{
         }
         jsonArray = jsonObject.getJSONArray("fragments");
         fragmentSpec = new FragmentSpec[jsonArray.length()];
-        for (int i = 0 ; i < fileSpec.length; i++)
+        for (int i = 0 ; i < fragmentSpec.length; i++)
         {
             JSONObject ob = jsonArray.getJSONObject(i);
             FragmentSpec fragmentSpec1 = new FragmentSpec(ob);
@@ -76,9 +76,9 @@ public class SiteSpec implements Parcelable{
         return null;
     }
 
-    public FileSpec getFile(String id) {
+    public FileSpec getFile(String fileId) {
         for (FileSpec f : fileSpec) {
-            if (id.equals(f.getId())) {
+            if (fileId.equals(f.getId())) {
                 return f;
             }
         }

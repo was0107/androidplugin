@@ -83,7 +83,7 @@ public class MyResources {
             int l;
             while (-1 != (l = io.read(buffer)))
                 bos.write(buffer,0, l);
-            bos.close();
+            io.close();
             return  bos.toByteArray();
         } catch (Exception e) {
             return new byte[0];
@@ -172,7 +172,7 @@ public class MyResources {
         File path = new File(dir, TextUtils.isEmpty(file.getMd5()) ? "1.apk" : file.getMd5()+".apk");
 
         if (!path.isFile())
-            throw new RuntimeException(path+ " is not exist");
+            return  null;
 
         try {
             AssetManager am = (AssetManager) AssetManager.class.newInstance();

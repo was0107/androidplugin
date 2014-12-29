@@ -1,6 +1,7 @@
 package com.b5m.loader;
 
 import android.text.TextUtils;
+import android.util.Log;
 import com.b5m.app.MyApplication;
 import com.b5m.loader.model.FileSpec;
 import com.b5m.loader.model.SiteSpec;
@@ -33,6 +34,7 @@ public class MyClassLoader extends DexClassLoader {
         try {
             clazz = getParent().loadClass(className);
         } catch (ClassNotFoundException e) {
+            Log.e("Loader","ClassNotFoundException =  " + e);
         }
 
         if (null != clazz)
@@ -40,7 +42,7 @@ public class MyClassLoader extends DexClassLoader {
 
         if (null!= deps) {
             for(MyClassLoader cl : deps) {
-                clazz = cl.findLoadedClass(className);
+                clazz = cl.findClass(className);
                 break;
             }
         }
@@ -49,7 +51,7 @@ public class MyClassLoader extends DexClassLoader {
         if (null != clazz)
             return clazz;
 
-        clazz = findLoadedClass(className);
+        clazz = findClass(className);
         return clazz;
     }
 
@@ -87,6 +89,7 @@ public class MyClassLoader extends DexClassLoader {
             return null;
         File outdir = new File(dir, "dexout");
         outdir.mkdir();
+
         cl = new MyClassLoader( path.getAbsolutePath(),
                 outdir.getAbsolutePath(), null, MyApplication.instance()
                 .getClassLoader(),file, ps);
