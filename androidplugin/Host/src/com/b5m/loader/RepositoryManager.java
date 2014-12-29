@@ -289,7 +289,8 @@ public class RepositoryManager {
                 /*下载*/
 
                 try {
-                    URL url = new URL(fCurrent.getUrl());
+//                    URL url = new URL(fCurrent.getUrl());
+                    URL url = new URL("https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/site1.txt");
                     HttpURLConnection conn = (HttpURLConnection)url.openConnection();
                     conn.setConnectTimeout(15000);//15秒
                     InputStream ins = conn.getInputStream();
