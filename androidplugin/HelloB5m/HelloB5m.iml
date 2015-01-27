@@ -15,7 +15,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 14 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Host" />
     <orderEntry type="library" name="host" level="project" />
   </component>
 </module>

@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="host">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/HelloB5m/libs/host.jar!/" />
+      <root url="jar://$PROJECT_DIR$/host.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
