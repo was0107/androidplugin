@@ -51,7 +51,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.b5m.hello" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.b5m.app" />
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
@@ -624,7 +624,7 @@
       <recent name="com.b5m.loader" />
     </key>
   </component>
-  <component name="RunManager" selected="Android Application.HelloB5m">
+  <component name="RunManager" selected="Android Application.Host">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -988,12 +988,12 @@
       <workItem from="1419903822857" duration="812000" />
       <workItem from="1422253139831" duration="5354000" />
       <workItem from="1422321117870" duration="7917000" />
-      <workItem from="1422409379792" duration="8664000" />
+      <workItem from="1422409379792" duration="8851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131097000" />
+    <option name="totallyTimeSpent" value="131284000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
