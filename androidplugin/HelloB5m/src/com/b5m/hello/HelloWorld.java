@@ -21,8 +21,9 @@ public class HelloWorld extends Fragment {
         // Using a Class object to obtain an instance of MyResources.
 
         // In this case, hello.xml is in the same package as HelloFragment class
+        //TODO: use this plugin to debug
 
-        Log.e("HelloWorld","onCreateView start");
+        /*
         MyResources res = null;
         View view = null;
         try {
@@ -31,18 +32,18 @@ public class HelloWorld extends Fragment {
         } catch (Exception e) {
             view = View.inflate(getActivity(),R.layout.hello, null);
         }
-
-//
-//
-//
-//
-////        MyResources res = MyResources.getResource(HelloWorld.class);
-////        Log.e("HelloWorld","onCreateView middle" + res.toString());
-////        View view = res.inflate(getActivity(), R.layout.hello, container, false);
-////        // Using MyResources.inflate() if you want to inflate some layout in
-////        // this package.
-////        Log.e("HelloWorld","onCreateView ended" + view.toString());
         return view;
 
+        */
+
+        //TODO: debug this plugin on main application
+        Log.i("HelloWorld","onCreateView start");
+        MyResources res = MyResources.getResource(HelloWorld.class);
+        Log.i("HelloWorld","onCreateView middle" + res.toString());
+        View view = res.inflate(getActivity(), R.layout.hello, container, false);
+        // Using MyResources.inflate() if you want to inflate some layout in
+        // this package.
+        Log.i("HelloWorld","onCreateView ended" + view.toString());
+        return view;
     }
 }
