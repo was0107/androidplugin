@@ -2,7 +2,7 @@
   "id": "com.b5m.hello.20150128.1",
   "files": [{
     "id": "com.b5m.hello.20150128.1",
-    "md5": "20d770f853e2bff1e34c911788626564",
+    "md5": "4616ac145655ff880725416cca832977",
     "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/HelloB5m.apk"
   }],
   "fragments": [
