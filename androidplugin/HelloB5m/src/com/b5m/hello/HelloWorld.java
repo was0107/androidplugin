@@ -2,6 +2,7 @@ package com.b5m.hello;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class HelloWorld extends Fragment {
 
         // Using MyResources.inflate() if you want to inflate some layout in
         // this package.
+        Log.e("HelloWorld","onCreateView");
         return res.inflate(getActivity(), R.layout.hello, container, false);
 
     }

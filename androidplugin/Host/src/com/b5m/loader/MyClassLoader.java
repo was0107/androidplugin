@@ -27,7 +27,6 @@ public class MyClassLoader extends DexClassLoader {
 
     @Override
     protected Class<?> loadClass(String className, boolean resolve) throws ClassNotFoundException {
-
         Class<?> clazz = findLoadedClass(className);
         if (null != clazz)
             return clazz;

@@ -1,16 +1,16 @@
 {
-  "id": "com.b5m.hello.20141229.1",
+  "id": "com.b5m.hello.20150128.1",
   "files": [{
-    "id": "com.b5m.hello.20141229.1",
-    "md5": "d923c02fca78cca55b6c6d54f9b4e965",
+    "id": "com.b5m.hello.20150128.1",
+    "md5": "736e174a8ff469ed14a157d81e41fd8f",
     "url": "https://raw.githubusercontent.com/was0107/androidplugin/master/androidplugin/site/develop/HelloB5m.apk"
   }],
   "fragments": [
     {
       "host": "hellob5m",
       "name": "com.b5m.hello.HelloWorld",
-      "code": "com.b5m.hello.20141229.1"
+      "code": "com.b5m.hello.20150128.1”
     }
   ],
-  "version": "20141229.1"
+  "version": "20150128.1”
 }
