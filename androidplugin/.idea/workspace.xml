@@ -139,15 +139,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_home.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_home.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Host/res/layout/activity_home.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.64" vertical-offset="239" max-vertical-offset="1230">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7454545" vertical-offset="239" max-vertical-offset="1230">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="27" selection-end-column="46" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -162,17 +162,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hello.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloB5m/res/layout/hello.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="510">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.8" vertical-offset="0" max-vertical-offset="525">
+              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding>
                 <element signature="e#671#689#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
+          <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -294,8 +294,8 @@
         <option value="$PROJECT_DIR$/HelloB5m/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/HelloB5m/src/com/b5m/hello/MyActivity.java" />
         <option value="$PROJECT_DIR$/Host/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/HelloB5m/res/layout/hello.xml" />
         <option value="$PROJECT_DIR$/Host/res/layout/activity_home.xml" />
+        <option value="$PROJECT_DIR$/HelloB5m/res/layout/hello.xml" />
       </list>
     </option>
   </component>
@@ -570,16 +570,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="androidplugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FragmentLoader" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -986,12 +976,12 @@
       <workItem from="1419903822857" duration="812000" />
       <workItem from="1422253139831" duration="5354000" />
       <workItem from="1422321117870" duration="7917000" />
-      <workItem from="1422409379792" duration="9330000" />
+      <workItem from="1422409379792" duration="9663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131763000" />
+    <option name="totallyTimeSpent" value="132096000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1478,30 +1468,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../==tools/android-sdk-macosx/platforms/android-14/data/res/values/attrs.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33242133" vertical-offset="3117" max-vertical-offset="82080">
-          <caret line="224" column="20" selection-start-line="224" selection-start-column="20" selection-end-line="224" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.33242133" vertical-offset="2892" max-vertical-offset="82080">
+          <caret line="209" column="20" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloB5m/res/layout/hello.xml">
+    <entry file="file://$PROJECT_DIR$/Host/res/layout/activity_home.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="510">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding>
-            <element signature="e#671#689#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-2.7454545" vertical-offset="239" max-vertical-offset="1230">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="27" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Host/res/layout/activity_home.xml">
+    <entry file="file://$PROJECT_DIR$/HelloB5m/res/layout/hello.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.64" vertical-offset="239" max-vertical-offset="1230">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-13.8" vertical-offset="0" max-vertical-offset="525">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="e#671#689#0" expanded="true" />
+          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
