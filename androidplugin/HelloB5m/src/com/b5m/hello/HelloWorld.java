@@ -21,12 +21,15 @@ public class HelloWorld extends Fragment {
 
         // In this case, hello.xml is in the same package as HelloFragment class
 
-        MyResources res = MyResources.getResource(HelloWorld.class);
+        Log.e("HelloWorld","onCreateView start");
 
+        MyResources res = MyResources.getResource(HelloWorld.class);
+        Log.e("HelloWorld","onCreateView middle");
+        View view = res.inflate(getActivity(), R.layout.hello, container, false);
         // Using MyResources.inflate() if you want to inflate some layout in
         // this package.
-        Log.e("HelloWorld","onCreateView");
-        return res.inflate(getActivity(), R.layout.hello, container, false);
+        Log.e("HelloWorld","onCreateView ended");
+        return view;
 
     }
 }
