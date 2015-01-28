@@ -24,11 +24,11 @@ public class HelloWorld extends Fragment {
         Log.e("HelloWorld","onCreateView start");
 
         MyResources res = MyResources.getResource(HelloWorld.class);
-        Log.e("HelloWorld","onCreateView middle");
+        Log.e("HelloWorld","onCreateView middle" + res.toString());
         View view = res.inflate(getActivity(), R.layout.hello, container, false);
         // Using MyResources.inflate() if you want to inflate some layout in
         // this package.
-        Log.e("HelloWorld","onCreateView ended");
+        Log.e("HelloWorld","onCreateView ended" + view.toString());
         return view;
 
     }
