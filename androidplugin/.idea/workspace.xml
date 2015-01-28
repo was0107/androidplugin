@@ -140,10 +140,10 @@
       <file leaf-file-name="hello.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloB5m/res/layout/hello.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="570">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding>
-                <element signature="e#817#835#0" expanded="true" />
+                <element signature="e#750#768#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -969,12 +969,12 @@
       <workItem from="1419903822857" duration="812000" />
       <workItem from="1422253139831" duration="5354000" />
       <workItem from="1422321117870" duration="7917000" />
-      <workItem from="1422409379792" duration="5305000" />
+      <workItem from="1422409379792" duration="7089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127738000" />
+    <option name="totallyTimeSpent" value="129522000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1482,10 +1482,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloB5m/res/layout/hello.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="570">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
           <folding>
-            <element signature="e#817#835#0" expanded="true" />
+            <element signature="e#750#768#0" expanded="true" />
           </folding>
         </state>
       </provider>
