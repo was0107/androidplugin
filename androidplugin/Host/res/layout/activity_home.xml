@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/siteurl"
         android:layout_centerHorizontal="true"
+        android:textSize="20sp"
         android:layout_marginTop="60dip"
         android:text="Launch last plugin" />
 
@@ -48,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/go_last"
         android:layout_marginTop="60dip"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:text="HelloWorld demo" />
 
@@ -57,6 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/go_helloworld"
+        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:text="BitmapFun demo" />
 
