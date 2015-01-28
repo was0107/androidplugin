@@ -1,6 +1,7 @@
 package com.b5m.hello;
 
 import android.app.Fragment;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,13 +23,25 @@ public class HelloWorld extends Fragment {
         // In this case, hello.xml is in the same package as HelloFragment class
 
         Log.e("HelloWorld","onCreateView start");
+        MyResources res = null;
+        View view = null;
+        try {
+            res = MyResources.getResource(HelloWorld.class);
+            view = res.inflate(getActivity(), R.layout.hello, container, false);
+        } catch (Exception e) {
+            view = View.inflate(getActivity(),R.layout.hello, null);
+        }
 
-        MyResources res = MyResources.getResource(HelloWorld.class);
-        Log.e("HelloWorld","onCreateView middle" + res.toString());
-        View view = res.inflate(getActivity(), R.layout.hello, container, false);
-        // Using MyResources.inflate() if you want to inflate some layout in
-        // this package.
-        Log.e("HelloWorld","onCreateView ended" + view.toString());
+//
+//
+//
+//
+////        MyResources res = MyResources.getResource(HelloWorld.class);
+////        Log.e("HelloWorld","onCreateView middle" + res.toString());
+////        View view = res.inflate(getActivity(), R.layout.hello, container, false);
+////        // Using MyResources.inflate() if you want to inflate some layout in
+////        // this package.
+////        Log.e("HelloWorld","onCreateView ended" + view.toString());
         return view;
 
     }
