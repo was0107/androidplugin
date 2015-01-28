@@ -9,8 +9,8 @@
     {
       "host": "hellob5m",
       "name": "com.b5m.hello.HelloWorld",
-      "code": "com.b5m.hello.20150128.1”
+      "code": "com.b5m.hello.20150128.1"
     }
   ],
-  "version": "20150128.1”
+  "version": "20150128.1"
 }
