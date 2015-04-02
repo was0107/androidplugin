@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title > test image </title>
+	<script type="text/javascript" src="zepto.js" ></script>
+	<script type="text/javascript" src="B5MApp.js" ></script>
+	<script type="text/javascript" src="B5MAppControl.js" ></script>
+	<link rel="stylesheet" type="text/css" href="home.css" />
+	<style type="text/css">
+		#imgbox img {
+			width:100%;
+			margin:auto;
+		}
+	</style>
+</head>
+
+<body>
+<h1> Image Test </h1>
+<div id="btn_imagePicker" class="btn">
+	Image Picker
+</div>
+
+<div id="imgbox">
+</div>
+<script type ="text/javascript">
+
+B5MApp.setTitle('image test');
+var btn = new B5MAppControl($('#btn_imagePicker').get(0));
+btn.onClick = function() {
+	B5MApp.takePhoto(function(image) {
+		var img = document.createElement('img');
+		img.src = 'data:image/jpeg;base64,' + image;
+        $('#imgbox').append(img);
+         img.onload = function() {
+             var imglabel = document.createElement('label');
+             imglabel.innerText = 'img.height' + img.height + 'img.width' + img.width;
+             $('#imgbox').append(imglabel);
+         };
+	});
+}
+</script>
+
+</body>
+
+
+</html>

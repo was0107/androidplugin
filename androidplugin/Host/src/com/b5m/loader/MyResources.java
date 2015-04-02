@@ -175,7 +175,7 @@ public class MyResources {
             return  null;
 
         try {
-            AssetManager am = (AssetManager) AssetManager.class.newInstance();
+            AssetManager am = AssetManager.class.newInstance();
             am.getClass().getMethod("addAssetPath",String.class).invoke(am, path.getAbsolutePath());
 
 
@@ -257,7 +257,7 @@ public class MyResources {
             throw new RuntimeException(path + " not exists");
 
         try {
-            AssetManager am = (AssetManager) AssetManager.class.newInstance();
+            AssetManager am = AssetManager.class.newInstance();
             am.getClass().getMethod("addAssetPath", String.class).invoke(am, path.getAbsolutePath());
 
             Resources superRes = MyApplication.instance().getResources();

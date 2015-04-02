@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title> 404 </title>
+	<script type="text/javascript" src="zepto.js"></script>
+	<script type="text/javascript" src="B5MApp.js"></script>
+	<script type="text/javascript" src="B5MAppControl.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="大众点评">
+    <link rel="apple-touch-icon-precomposed" href="" />
+    <link rel="apple-touch-startup-image" href="" />
+    
+    
+	<style type="text/css">
+		html,body {
+			background-color:#f8f8f8;
+			margin:0;
+			padding:0;
+			width:100%;
+			height:100%;
+		}
+
+		#notfound {
+			height:300px;
+			text-align:center;
+			color: #ccc;
+			font-family: 'Menlo';
+		}
+
+        #error {
+			height: 100px;
+			ling-height: 100px;
+			margin: auto;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="notfound"> 
+	<div id="error" > 404 </div>
+	<div id="message"></div>
+</div>
+<script type = "text/javascript">
+	B5MApp.setTitle('404');
+    B5MApp.action.get(function(query) {
+      var page = query.page || '';
+      $('#message').html('page [<strong>' + page + '</strong>] not found');
+	});
+</script>
+</body>
+</html>

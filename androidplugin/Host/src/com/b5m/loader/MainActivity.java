@@ -31,7 +31,6 @@ import com.b5m.loader.model.SiteSpec;
  */
 public class MainActivity extends MyActivity {
 
-
     private SiteSpec site;
     private FileSpec file;
     private String fragmentName;
@@ -41,9 +40,7 @@ public class MainActivity extends MyActivity {
     private AssetManager assetManager;
     private Resources resources;
     private Resources.Theme theme;
-
     private FrameLayout rootView;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
