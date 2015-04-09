@@ -68,6 +68,7 @@ public class JSWebviewActivity extends Activity {
         webSettings.setSavePassword(true);
         webView.setHorizontalScrollBarEnabled(false);
         webView.setVerticalScrollBarEnabled(false);
+
         webView.setWebViewClient(new JSWebViewClient(this));
         webView.setWebChromeClient(new WebChromeClient(){});
     }

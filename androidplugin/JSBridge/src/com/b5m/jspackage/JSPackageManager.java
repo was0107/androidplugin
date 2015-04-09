@@ -20,7 +20,7 @@ public class JSPackageManager {
     public String URL4Page(Context context, String page) {
         String result = page + ".html";
 
-        //TODO YOU CAN LOAD DEBUT PATH HERE
+        //TODO YOU CAN LOAD DEBUG PATH HERE
 
 
         //TODO YOU CAN LOAD PRESET PATH HERE
